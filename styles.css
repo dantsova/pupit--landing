@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+div{
+    display: flex;
+}
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 67%;
+}
+.nav-items{
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    color: #4B5D68;
+    font-size: 100%;
+    padding: 0 20% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.selected{
+    font-weight: 1100;
+    color: #212353;
+}
+
+header{
+    margin: 2% 5% auto 16%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 2;
+}
+#logo{
+    width: 52%;
+    height: 52%;
+}
+button {
+    width: 210px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-color: transparent;
+    border-radius: 50px;
+}
+
+.button-content{
+    padding-left: 11%;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+    flex-wrap: nowrap;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+#request-demo{
+    margin-right: 9%;
+    flex-shrink: 1;
+}
+
+.arrow{
+    width: 45%;
+}
+@media screen  and (max-width: 1100px) {
+
+}

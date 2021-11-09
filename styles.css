@@ -8,7 +8,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
     max-height: 100%;
     max-width: 100%;
     justify-content: space-between;
@@ -31,14 +31,18 @@ div{
     line-height: 160%;
     color: #4B5D68;
     font-size: 100%;
-    padding: 0 20% 0 0;
+    padding-right: 20%;
     display: flex;
     justify-content: center;
-    align-items: start;
     text-align: center;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+.nav .icon {
+    display: none;
+}
+
 .selected{
     font-weight: 1100;
     color: #212353;
@@ -57,15 +61,12 @@ header{
 .menu{
     display: flex;
     flex-direction: row;
-    flex-wrap: 2;
 }
 #logo{
     width: 52%;
     height: 52%;
 }
 button {
-    width: 210px;
-    height: 60px;
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-color: transparent;
@@ -85,7 +86,9 @@ button {
     color: #212353;
     flex-wrap: nowrap;
 }
-.buttons{
+.request-demo-buttons{
+    width: 210px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,5 +104,57 @@ button {
     width: 45%;
 }
 @media screen  and (max-width: 1100px) {
+    header{
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        background: transparent; /* Цвет фона */
+        filter: alpha(Opacity=70); /* Прозрачность в IE */
+        color: #fff; /* Цвет текста */
+        margin-left: 0%;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        display: flex;
+    }
+    .nav a.nav-items:hover{
+        background: #cbd6ee;
+    }
+    .hidden{
+        display: none;
+    }
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive a {
+        background: #33A2E0;
+        float: none;
+        display: flex;
+        text-align: left;
+        padding: 0 1000% 0 9%;
+    }
+
+    .request-demo-buttons {
+        width: 80%;
+        height: 80%;
+    }
+    #logo {
+        width: 40%;
+        height: 52%;
+    }
+    #request-demo {
+        margin-right: 1%;
+    }
 
 }

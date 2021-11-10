@@ -12,7 +12,13 @@ body{
     max-height: 100%;
     max-width: 100%;
     justify-content: space-between;
+
 }
+/*::-webkit-scrollbar {
+    width: 0;
+}
+ */
+
 a{
     cursor: pointer;
 }
@@ -114,6 +120,86 @@ button {
 .arrow{
     width: 45%;
 }
+
+
+
+/* main */
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 8% 5% auto 16%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    justify-content: space-around;
+}
+
+#title{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 500%;
+    line-height: 110%;
+    color: #212353;;
+}
+
+#content{
+    width: 380px;
+    height: 120px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 112.5%;
+    line-height: 160%;
+
+    color: #4B5D68;
+    margin: 0 0 8% 0;
+    text-align: left;
+}
+#image{
+    display: flex;
+}
+.main-img{
+    width: 100%;
+}
+.learn-more-buttons{
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 170px;
+    height: 60px;
+}
+#learn-more-1{
+    background: #9C69E2;
+    text-align: center;
+    color: #ffffff;
+    justify-content: center;
+    padding-left: 0%;
+}
+.learn-more-buttons-content{
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    flex-wrap: nowrap;
+}
+
+
+
+
 @media screen  and (max-width: 1100px) {
     header{
         margin-left: 3%;

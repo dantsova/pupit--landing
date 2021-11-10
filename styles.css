@@ -131,6 +131,8 @@ button {
     }
     .nav a.icon {
         display: flex;
+        width: auto;
+
     }
     .nav a.nav-items:hover{
         background: #cbd6ee;
@@ -142,20 +144,23 @@ button {
         position: relative;
     }
     .nav.responsive a {
-        background: #33A2E0;
+        background: transparent;
         float: none;
         display: flex;
-        text-align: left;
-        padding: 0 1000% 0 9%;
+        text-align: center;
     }
-
+    .nav-items {
+        justify-content: left;
+    }
     #logo {
        /* width: 70%;
         height: 52%;
         */
         display: none;
     }
-    #request-demo {
+    .request-demo-buttons {
+        height: 40%;
+
     }
     .nav .icon{
     }

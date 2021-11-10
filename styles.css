@@ -13,7 +13,17 @@ body{
     max-width: 100%;
     justify-content: space-between;
 }
-
+a{
+    cursor: pointer;
+}
+a:hover {
+    color: #9C69E2;
+    transition: 0.7s;
+}
+button:hover {
+    box-shadow: 10px 25px 25px #9C69E2;
+    transition: 0.7s;
+}
 div{
     display: flex;
 }
@@ -72,6 +82,7 @@ button {
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-color: transparent;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .button-content{
@@ -122,7 +133,6 @@ button {
         margin-left: 0%;
         justify-content: flex-start;
         flex-direction: column;
-
         justify-content: space-between;
     }
 
@@ -135,7 +145,7 @@ button {
 
     }
     .nav a.nav-items:hover{
-        background: #cbd6ee;
+        background: #9C69E2;
     }
     .hidden{
         display: none;

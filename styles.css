@@ -14,12 +14,10 @@ body{
     justify-content: space-between;
 
 }
-/*::-webkit-scrollbar {
-    width: 0;
-}
- */
+
 
 a{
+    text-decoration: none;
     cursor: pointer;
 }
 a:hover {
@@ -40,19 +38,20 @@ div{
     justify-content: space-around;
     margin-left: 67%;
 }
-.nav-items{
+a{
     font-family: Avenir;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
     color: #4B5D68;
     font-size: 100%;
+}
+.nav-items{
     padding-right: 20%;
     display: flex;
     justify-content: center;
     text-align: center;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .nav .icon {
@@ -234,26 +233,84 @@ button {
 }
 .table{
     display: flex;
-    flex-direction: column;
-}
-.row{
-    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .table-element{
     display: flex;
     flex-direction: row;
+    margin: 2% -1%;
+    border-radius: 50px;
+    max-width: 51%;
 }
 .table-data{
-    display: flex;
-    flex-direction: column;
     width: 442px;
     height: 358px;
-    background: #F063B8;
-    opacity: 0.1;
-    border-radius: 50px;
+    margin-left: -30%;
 }
-
+.table-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 220px;
+    margin-left: 30%;
+}
+#search-data-div{
+    background-image: url("resources/images/feature-images/search-data-bcg.png");
+}
+#hours-access-div{
+    background-image: url("resources/images/feature-images/24-hours-access-bcg.png");
+}
+#security-code-div{
+    background-image: url("resources/images/feature-images/security-code-bcg.png");
+}
+#print-out-div{
+    background-image: url("resources/images/feature-images/print-out-bcg.png");
+}
+.features-title{
+    font-size: 250%;
+    line-height: 130%;
+    display: flex;
+    padding: 3%;
+}
+.table-title{
+    font-size: 150%;
+    font-weight: normal;
+}
+#features-content{
+    display: flex;
+    width: 584px;
+    height: 58px;
+    display: flex;
+    text-align: center;
+}
+.features-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 8% 5% auto 16%;
+}
+.feature-content-div{
+    align-items: center;
+    margin-left: -8%;
+    padding: 0;
+}
+.feature-images{
+    width: 232px;
+    height: 211px;
+    margin-top: 40%;
+}
+.arrow-learn-more{
+    width: auto;
+}
+.table-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 @media screen  and (max-width: 1100px) {
     header{

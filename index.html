@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" href="media1000-1300.css">
     <link type="text/css" rel="stylesheet" href="media800-1000.css">
     <link type="text/css" rel="stylesheet" href="media100-800.css">
-    <link rel="stylesheet" href="chiefslider.css">
+    <link rel="stylesheet" href="customslider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
@@ -131,7 +131,7 @@
         <div class="title testimonials-title">
             Testimonials
         </div>
-        <div class="slider" data-slider="chiefslider">
+        <div class="slider" data-slider="customslider">
             <div class="slider__container">
                 <div class="slider__wrapper">
                     <div class="slider__items rectangles">
@@ -263,11 +263,11 @@
         </button>
     </div>
 </footer>
-    <script src="chiefslider.js"></script>
+    <script src="customslider.js"></script>
 
     <script>
-        const $slider = document.querySelector('[data-slider="chiefslider"]');
-        const slider = new ChiefSlider($slider, {
+        const $slider = document.querySelector('[data-slider="customslider"]');
+        const slider = new Customslider($slider, {
             loop: true,
             autoplay: false,
             refresh: true,

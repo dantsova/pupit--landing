@@ -1,0 +1,27 @@
+@media screen  and (max-width: 1500px) and (min-width: 1300.1px){
+    body{
+        display: flex;
+    }
+    section, header, footer{
+        padding-left: 7%;
+        padding-right: 5%;
+        flex-wrap: wrap;
+    }
+    .testimonials{
+        padding-right: 0;
+        margin-right: 0;
+        padding-left: 7%;
+    }
+    .first-section{
+        margin-left: 7%;
+    }
+}
+@media screen  and (max-width: 1350px) and (min-width: 1300px){
+    .main-img{
+
+        margin-top: 5%;
+        margin-left: -16%;
+        width: 60%;
+        height: 60%;
+    }
+}

@@ -1,0 +1,58 @@
+@media screen  and (max-width: 1300px)  and (min-width: 1000px){
+    body{
+        display: flex;
+    }
+    section, header, footer{
+        padding-left: 4%;
+        padding-right: 3%;
+        flex-wrap: wrap;
+    }
+    .testimonials{
+        padding-left: 4%;
+    }
+    .arrows{
+        margin-right: 10%;
+    }
+    .first-section{
+        margin-top: 0px;
+        margin-left: 5%;
+        align-items: center;
+    }
+    #title-1{
+        min-width: 100%;
+    }
+    #first-section-content{
+         padding-top: 0px;
+         padding-bottom: 50px;
+     }
+    .main-img{
+        margin-top: 20%;
+        margin-left: -15%;
+        width: 60%;
+        height: 60%;
+    }
+    #second-section-div {
+        margin-left: 0px;
+        padding-right: 20px;
+        text-align: left;
+        justify-content: center;
+     }
+
+    #second-section-content{
+        width: initial !important;
+    }
+    .table{
+        justify-content: space-around;
+        margin-left: -3.5%;
+     }
+    .table-element{
+        margin-right: 15px;
+    }
+    .features-section{
+        padding: 90px 0;
+    }
+    .chat {
+        width: 60px;
+        height: 60px;
+    }
+}

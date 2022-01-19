@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,6 +7,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="media1300-1500.css">
+    <link type="text/css" rel="stylesheet" href="media1000-1300.css">
+    <link type="text/css" rel="stylesheet" href="media800-1000.css">
+    <link type="text/css" rel="stylesheet" href="media100-800.css">
+    <link rel="stylesheet" href="chiefslider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
@@ -14,19 +19,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
-    <div class="menu">
-        <img id="logo" src="resources/images/logo.png"/>
-        <nav class="nav" id="nav">
-            <a href="javascript:void(0);" class="nav-items icon" onclick="burgerFunction()">
-                <i class="fa fa-bars"></i>
-            <a class="nav-items selected" href="#">About</a>
-            <a class="nav-items" href="#">Help</a>
-            <a class="nav-items" href="#">Features</a>
-            <a class="nav-items" href="#">Signup</a>
-            </a>
-        </nav>
-    </div>
+<header id="header">
+    <nav class="nav" id="nav">
+        <a id="logo-header" class="logo-nav"><img class="logo" src="resources/images/logo.png" onclick="headerBurgerFunction()"/></a>
+        <a class="nav-items hidden" href="#">About</a>
+        <a class="nav-items hidden" href="#">Help</a>
+        <a class="nav-items hidden" href="#">Features</a>
+        <a class="nav-items hidden" href="#">Signup</a>
+        </a>
+    </nav>
     <div id="request-demo">
         <button class="request-demo-buttons">
             <div class="button-content">Request Demo</div>
@@ -36,7 +37,7 @@
         </button>
     </div>
 </header>
-<section class="first-section">
+<div class="first-section">
     <div class="content">
         <div class="title" id="title-1">Save your data storage here.</div>
         <div class="content-text" id="first-section-content">Data Warehouse is a data storage area that has been
@@ -46,12 +47,11 @@
             <button class="learn-more-buttons" id="learn-more-1"><div class="button-content learn-more-buttons-font">Learn more</div></button>
         </div>
     </div>
-    <div id="image">
-        <img class='main-img' src="resources/images/main-img.png"/>
-    </div>
-</section>
+    <img class='main-img'src="resources/images/main-img.png"/>
+</div>
 <section class="second-section">
-    <div>
+    <div class="second-section-div">
+    <div class="ping-girl-div">
         <img id="ping-girl-image" src="resources/images/pink-girl.png">
     </div>
     <div class="content" id="second-section-div">
@@ -61,97 +61,258 @@
             To enter into your own data you must enter the password that you created when you registered
             in this Data Warehouse. </div>
     </div>
+    </div>
 </section>
+
 <section class="features-section">
     <div class="content feature-content-div">
         <div class="title features-title">Features</div>
         <div class="content-text" id="features-content">Some of the features and advantages that we provide
             for those of you who store data in this Data Warehouse.</div>
     </div>
-    <div class="table">
-        <div class="table-element">
-            <div>
-                <img class="feature-images" src="resources/images/feature-images/search-data.png">
-            </div>
-            <div class="table-data" id="search-data-div">
-                <div class="table-content">
-                <div class="title features-title table-title">Search Data</div>
-                <div class="content table-content">
+</section>
+<section class="table div_flex">
+        <div class="table-element div_flex">
+            <img class="table-images" id="table-image-1" src="resources/images/feature-images/search-data.png"/>
+            <img class="table-back" src="resources/images/feature-images/search-data-bcg.png"/>
+            <div class="table-content div_flex">
+                <div class="div_flex title features-title table-title">Search Data</div>
+                <div class="div_flex table-text">
                     Don’t worry if your data is very large, the Data Warehoue
                     provides a search engine, which is useful for making it easier
                     to find data effectively saving time.
                 </div>
-                <div class="table-link">
+                <div class="div_flex table-link">
                     <a href="#"><span>Learn more</span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a>
                 </div>
-                </div>
-        </div>
-        </div>
-        <div class="table-element">
-            <div>
-                <img class="feature-images" src="resources/images/feature-images/24-hours-access.png">
-            </div>
-            <div class="table-data" id="hours-access-div">
-                <div class="table-content">
-                <div class="title table-title">24 Hours Access</div>
-                <div class="content table-content">
-                    Access is given 24 hours a full morning to night and
-                    meet again in the morning, giving you comfort when
-                    you need data when urgent.
-                </div>
-                    <div class="table-link"><a href="#"><span>Learn more</span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a> </div>
-            </div>
             </div>
         </div>
-        <div class="table-element">
-            <div>
-                <img class="feature-images" src="resources/images/feature-images/print-out.png">
-            </div>
-            <div class="table-data" id="print-out-div">
-                <div class="table-content">
-                <div class="title table-title">Print Out</div>
-                <div class="content table-content">
+        <div class="table-element div_flex">
+                <img class="table-images" id="table-image-2" src="resources/images/feature-images/24-hours-access.png">
+                <img class="table-back" src="resources/images/feature-images/24-hours-access-bcg.png">
+                    <div class="table-content div_flex">
+                        <div class="title table-title div_flex">24 Hours Access</div>
+                        <div class="table-text div_flex">
+                            Access is given 24 hours a full morning to night and
+                            meet again in the morning, giving you comfort when
+                            you need data when urgent.
+                        </div>
+                        <div class="table-link div_flex"><a href="#"><span>Learn more</span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a> </div>
+                    </div>
+        </div>
+        <div class="table-element div_flex">
+            <img class="table-images" id="table-image-3" src="resources/images/feature-images/print-out.png">
+            <img class="table-back" src="resources/images/feature-images/print-out-bcg.png">
+            <div class="table-content div_flex">
+                <div class="title table-title div_flex">Print Out</div>
+                <div class="table-text div_flex">
                     Print out service gives you convenience if someday
                     you need print data, just edit it all and just print it.
                 </div>
-                    <div class="table-link"><a href="#"><span>Learn more</span> <img class="arrow-learn-more" src="resources/images/arrow.png"> </a> </div>
-            </div>
+                <div class="table-link div_flex"><a href="#"><span>Learn more</span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a> </div>
             </div>
         </div>
-        <div class="table-element">
-            <div>
-                <img class="feature-images" src="resources/images/feature-images/security-code.png">
-            </div>
-            <div class="table-data" id="security-code-div">
-                <div class="table-content">
-                <div class="title table-title">Security Code</div>
-                <div class="content table-content">
+        <div class="table-element div_flex">
+            <img class="table-images" id="table-image-4" src="resources/images/feature-images/security-code.png">
+            <img class="table-back" src="resources/images/feature-images/security-code-bcg.png">
+            <div class="table-content div_flex">
+                <div class="title table-title div_flex">Security Code</div>
+                <div class="table-text div_flex">
                     Data Security is one of our best facilities. Allows for your files
                     to be safer. The file can be secured with a code or password that
                     you created, so only you can open the file.
                 </div>
-                    <a class="table-link" href="#"><span>Learn more  </span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a>
+                <div class="table-link div_flex"><a href="#"><span>Learn more</span><img class="arrow-learn-more" src="resources/images/arrow.png"> </a> </div>
             </div>
+    </div>
+</section>
+<div class="testimonials">
+    <div class="container">
+        <div class="title testimonials-title">
+            Testimonials
+        </div>
+        <div class="slider" data-slider="chiefslider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__items rectangles">
+                        <div class="slider__item item">
+                            <div class="slider__content">
+                                <div class="slider__content_avatar">
+                                    <img class="slider__content_photo" src="https://itchief.ru/examples/images/photo-1.jpg" alt="">
+                                </div>
+                                <div class="slider__content_author_information">
+                                    <span class="slider__content_author">John Fang</span>
+                                    <span class="slider__content_status">wordfaang.com</span>
+                                    <div class="slider__content_opinion">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item item">
+                            <div class="slider__content">
+                                <div class="slider__content_avatar">
+                                    <img class="slider__content_photo" src="https://itchief.ru/examples/images/photo-2.jpg" alt="">
+                                </div>
+                                <div class="slider__content_author_information">
+                                    <span class="slider__content_author">Jeny Doe</span>
+                                    <span class="slider__content_status">UX Engineer</span>
+                                    <div class="slider__content_opinion">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item item">
+                            <div class="slider__content">
+                                <div class="slider__content_avatar">
+                                    <img class="slider__content_photo" src="https://itchief.ru/examples/images/photo-3.jpg" alt="">
+                                </div>
+                                <div class="slider__content_author_information">
+                                    <span class="slider__content_author">William</span>
+                                    <span class="slider__content_status">Web Designer</span>
+                                    <div class="slider__content_opinion">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item item item3">
+                            <div class="slider__content">
+                                <div class="slider__content_avatar">
+                                    <img class="slider__content_photo" src="https://itchief.ru/examples/images/photo-4.jpg" alt="">
+                                </div>
+                                <div class="slider__content_author_information">
+                                    <span class="slider__content_author">Yana Dantsova</span>
+                                    <span class="slider__content_status">Creator</span>
+                                    <div class="slider__content_opinion">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-links">
+                        <ol class="slider__indicators">
+                            <li data-slide-to="0"></li>
+                            <li data-slide-to="1"></li>
+                            <li data-slide-to="2"></li>
+                            <li data-slide-to="3"></li>
+                        </ol>
+                        <div class="arrows">
+                            <a class="slider__control slider__control_left" href="#" role="button" data-slide="prev"></a>
+                            <a class="slider__control slider__control_right slider__control_show" href="#" role="button" data-slide="next"></a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<script>
-    function burgerFunction() {
-        let x = document.getElementById("nav");
-        let reqButtons = document.getElementsByClassName("request-demo-buttons");
-        if (x.className === "nav") {
-            x.className += " responsive";
-            for(let element of reqButtons){
-                element.className += " hidden";
+</div>
+<footer>
+    <div class="try-for-free">
+        <div class="footer-content">
+            <div class="title features-title" id="try-for-free-title">Try for free!</div>
+            <div class="content-text">Get limited 1 week free try our features!</div>
+        </div>
+        <div class="footer-buttons">
+            <button class="f-buttons learn-more-buttons" id="learn-more-2"><div class="button-content learn-more-buttons-font">Learn more</div></button>
+            <button class="f-buttons request-demo-buttons" id="request-demo-2">
+                <div class="button-content">Request Demo</div>
+                <div>
+                    <img class="arrow" src="resources/images/arrow.png ">
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="footer-contacts">
+        <div class="data-warehouse-footer">
+            <div class="data-warehouse-title">
+                <img class="logo" src="resources/images/logo.png">
+                <div class="footer-text footer-title data-title">DataWarehouse</div>
+            </div>
+            <div class="footer-text address">Warehouse Society, 234 <br>Bahagia Ave Street PRBW 29281</div>
+            <div class="footer-text contacts">info@warehouse.project <br>1-232-3434 (Main)</div>
+        </div>
+        <div class="about-footer">
+            <div class="links-list" id="about-footer">
+                <a class="footer-title" onclick="footerBurgerFunction()" id="about-title">About</a>
+                <a class="footer-list-text footer-list-about hidden">Profile</a>
+                <a class="footer-list-text footer-list-about hidden">Features</a>
+                <a class="footer-list-text footer-list-about hidden">Career</a>
+                <a class="footer-list-text footer-list-about hidden">DW News</a>
+            </div>
+        </div>
+        <div class="help-footer">
+            <div class="links-list">
+                <a class="footer-title" onclick="footerBurgerFunction()" id="help-title">Help</a>
+                <a class="footer-list-text footer-list-help hidden">Support</a>
+                <a class="footer-list-text footer-list-help hidden">Sign up</a>
+                <a class="footer-list-text footer-list-help hidden">Guide</a>
+                <a class="footer-list-text footer-list-help hidden">Reports</a>
+                <a class="footer-list-text footer-list-help hidden">Q&A</a>
+            </div>
+        </div>
+        <div class="social-media-footer">
+            <div class="footer-title">Social Media</div>
+            <div class="sm-logos">
+                <a><img class="sm-logo" src="resources/images/social-media-images/facebook-logo.png"></a>
+                <a><img class="sm-logo" src="resources/images/social-media-images/twitter-logo.png"></a>
+                <a><img class="sm-logo" src="resources/images/social-media-images/instagram-logo.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright-text">
+        © Datawarehouse™, 2020. All rights reserved. <br>Company Registration Number: 21479524.
+        </div>
+        <button class="chat request-demo-buttons">
+        </button>
+    </div>
+</footer>
+    <script src="chiefslider.js"></script>
+
+    <script>
+        const $slider = document.querySelector('[data-slider="chiefslider"]');
+        const slider = new ChiefSlider($slider, {
+            loop: true,
+            autoplay: false,
+            refresh: true,
+        });
+    </script>
+    <script>
+    function footerBurgerFunction() {
+        let x = document.getElementById(event.target.id);
+        if (x.className == "footer-title") {
+            let reqLinks;
+            if(event.target.id == "about-title") {
+                 reqLinks = document.getElementsByClassName("footer-list-about");
+            } else if (event.target.id == "help-title"){
+                reqLinks = document.getElementsByClassName("footer-list-help");
             }
-        } else {
-            for(let element of reqButtons){
-                if(element.className == "request-demo-buttons hidden") {
-                    element.className = "request-demo-buttons";
+            for(let element of reqLinks){
+                if(element.className.includes("hidden")) {
+                    element.className = element.className.replace(' hidden', '');
+                }
+                else{
+                    element.className += " hidden";
                 }
             }
-            x.className = "nav";
+        }
+    }
+
+    function headerBurgerFunction() {
+        let x = document.getElementById("logo-header");
+        let reqLinks;
+        let header = document.getElementById("header");
+        console.log(header.className);
+        if (x.className === "logo-nav") {
+            reqLinks = document.getElementsByClassName("nav-items");
+            for(let element of reqLinks){
+                if(element.className.includes("hidden")) {
+                    element.className = element.className.replace('hidden', '');
+                    header.className = "flex-column";
+                    console.log(header.className);
+                }
+                else{
+                    element.className += "hidden";
+                    header.className = header.className.replace('flex-column', '');
+
+                }
+            }
         }
     }
 </script>
